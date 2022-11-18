@@ -14,20 +14,24 @@
 }
 
 .container h2 {
-    color: black;
+    color: rgb(36, 20, 213);
     font-size: 32px;
     padding: 50px 0;
     text-align: center;
     font-weight: 900;
 }
 
-.price-low {
+.price-col h3 span{ 
+    font-size: 23px;
+}
+
+.price-row {
     width: 90%;
     max-width: 1200px;
     margin: auto;
     display: grid;
     /* for responsiveness, we use the minmax function */
-    grid-template-columns: repeat(auto-fit, minmax250px, 1fr());
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
@@ -40,3 +44,60 @@
     text-align: center;
 }
 
+.price-col p {
+    font-size: 23px;
+}
+
+#starter{
+    color: rgb(212, 73, 209);
+}
+
+#advance {
+    color: rgb(220, 56, 157);
+}
+
+
+#premium {
+    color: rgb(205, 8, 130);
+}
+
+.price-col h3 {
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 600;
+}
+ 
+.price-col ul {
+    list-style: none;
+    margin: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.price-col ul li {
+    margin: 15px 0;
+}
+
+.price-col ul li::before {
+    content: '\2022';
+    color: red;
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.price-col button {
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid red;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 2s;
+}
+
+.price-col button:hover {
+    background-color: orange;
+}
